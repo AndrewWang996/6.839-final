@@ -16,12 +16,14 @@ file(GLOB_RECURSE OpenFab_Header ${OpenFab_Include_Dir}/*.h)
 file(GLOB_RECURSE OpenFab_Source ${OpenFab_Source_Dir}/*.cpp)
 file(GLOB_RECURSE OpenFab_Viewer ${OpenFab_Include_Dir}/igl/viewer/*.cpp)
 
+set(Assignment1_Sources ${OpenFab_Source_Dir}/main.cpp)
 set(Assignment2_Sources ${OpenFab_Source_Dir}/main2.cpp)
 set(Assignment3_Sources ${OpenFab_Source_Dir}/main3.cpp) # ${OpenFab_Viewer})
 set(Assignment4_Sources ${OpenFab_Source_Dir}/main4.cpp)
 set(Assignment6_Sources ${OpenFab_Source_Dir}/main6.cpp)
 
 #Main setup
+add_executable(Assignment1 ${OpenFab_Header} ${Assignment1_Sources})
 add_executable(Assignment2 ${OpenFab_Header} ${Assignment2_Sources})
 add_executable(Assignment3 ${OpenFab_Header} ${Assignment3_Sources})
 add_executable(Assignment4 ${OpenFab_Header} ${Assignment4_Sources})
@@ -29,6 +31,13 @@ add_executable(Assignment6 ${OpenFab_Header} ${Assignment6_Sources})
 
 
 # Specific includes
+target_include_directories(Assignment1 PRIVATE ../DataStructure/include)
+target_include_directories(Assignment1 PRIVATE ../Geometry/include)
+target_include_directories(Assignment1 PRIVATE ../AutodiffEngine/include)
+target_include_directories(Assignment1 PRIVATE ../Mesh/include)
+target_include_directories(Assignment1 PRIVATE ../NetworkCommunication/include)
+target_include_directories(Assignment1 PRIVATE ../FabTranslation/include)
+
 target_include_directories(Assignment2 PRIVATE ../DataStructure/include)
 target_include_directories(Assignment2 PRIVATE ../Geometry/include)
 target_include_directories(Assignment2 PRIVATE ../AutodiffEngine/include)
@@ -75,7 +84,7 @@ target_compile_definitions(glew PUBLIC -DGLEW_BUILD -DGLEW_NO_GLU)
 
 
 # Generic includes / linking
-foreach(Target IN LISTS Assignment2 Assignment3 Assignment4 Assignment6)
+foreach(Target IN LISTS Assignment1 Assignment2 Assignment3 Assignment4 Assignment6)
   
   target_include_directories(${Target} PRIVATE ${OpenFab_Include_Dir})
   #Add external libraries
@@ -108,6 +117,8 @@ foreach(Target IN LISTS Assignment2 Assignment3 Assignment4 Assignment6)
 endforeach()
 
 # Specific linkings
+target_link_libraries(Assignment1 igl::core igl::opengl igl::opengl_glfw glew NetworkCommunication)
+target_link_libraries(Assignment2 igl::core igl::opengl igl::opengl_glfw glew)
 target_link_libraries(Assignment3 igl::core igl::opengl igl::opengl_glfw glew)
 #target_link_libraries(Assignment3 ${LIBIGL_LIBRARIES} ${LIBIGL_EXTRA_LIBRARIES})
 
