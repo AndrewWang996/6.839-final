@@ -4,9 +4,9 @@ We are building off of Assignment 1.
 
 ## How to use
 
-git clone using --recurse-submodules
-create internal build directory
-cd build
-cmake ..
-make Assignment1
-./OpenFab/Assignment1
+git clone using --recurse-submodules <br/>
+create internal build directory <br/>
+cd build <br/>
+cmake .. <br/>
+make Assignment1 <br/>
+./OpenFab/Assignment1 <br/>
