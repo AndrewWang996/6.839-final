@@ -10,3 +10,5 @@ cd build <br/>
 cmake .. <br/>
 make Assignment1 <br/>
 ./OpenFab/Assignment1 <br/>
+
+View output in MeshLab
