@@ -1,0 +1,20 @@
+[submodule "ExternalLibs/CppAD"]
+	path = ExternalLibs/CppAD
+	url = https://github.com/mit-gfx/CppAD.git
+	branch = stable/20180000
+[submodule "ExternalLibs/eigen-git-mirror"]
+	path = ExternalLibs/eigen-git-mirror
+	url = https://github.com/eigenteam/eigen-git-mirror.git
+	branch = branches/3.3
+[submodule "ExternalLibs/CppADCodeGen"]
+	path = ExternalLibs/CppADCodeGen
+	url = https://github.com/mit-gfx/CppADCodeGen.git
+[submodule "ExternalLibs/googletest"]
+	path = ExternalLibs/googletest
+	url = https://github.com/google/googletest.git
+[submodule "ExternalLibs/libigl"]
+	path = ExternalLibs/libigl
+	url = https://github.com/libigl/libigl.git
+[submodule "ExternalLibs/cinolib"]
+	path = ExternalLibs/cinolib
+	url = https://github.com/mlivesu/cinolib.git

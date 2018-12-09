@@ -1,0 +1,42 @@
+/home/aespielberg/Downloads/CLion-2018.2.2/clion-2018.2.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/aespielberg/ResearchCode/OpenFab
+CMake Warning (dev) at CMakeLists.txt:1 (project):
+  Policy CMP0048 is not set: project() command manages VERSION variables.
+  Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The following variable(s) would be set to empty:
+
+    CMAKE_PROJECT_VERSION
+    CMAKE_PROJECT_VERSION_MAJOR
+    CMAKE_PROJECT_VERSION_MINOR
+    CMAKE_PROJECT_VERSION_PATCH
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- package CppAD found
+-- Could NOT find ADOLC (missing: ADOLC_INCLUDE_DIRS ADOLC_LIBRARIES) 
+-- Could NOT find Eigen3 (missing: EIGEN3_INCLUDE_DIR EIGEN3_VERSION_OK) (Required is at least version "2.91.0")
+-- package dl found
+-- llvm-config found at: /usr/bin/llvm-config-6.0
+-- Could NOT find CLANG (missing: CLANG_INCLUDE_DIRS CLANG_LIBS) 
+-- Could NOT find LATEX (missing: LATEX_COMPILER) 
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+CMake Deprecation Warning at ExternalLibs/libigl/external/glfw/CMakeLists.txt:10 (cmake_policy):
+  The OLD behavior for policy CMP0042 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Could NOT find Vulkan (missing: VULKAN_LIBRARY VULKAN_INCLUDE_DIR) 
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Using X11 for window creation
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-pthread (found version "3.0.0") 
+-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-pthread;-pthread (found version "3.0.0") 
+-- Found the following C# Mono versions: 4.6.2
+-- Using Mono compiler version 4.6.2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aespielberg/ResearchCode/OpenFab/cmake-build-debug

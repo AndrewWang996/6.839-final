@@ -1,0 +1,2 @@
+/usr/bin/ar qc libControld_.a  
+/usr/bin/ranlib libControld_.a

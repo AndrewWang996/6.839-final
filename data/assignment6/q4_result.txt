@@ -1,0 +1,486 @@
+print Q4 test result
+
+bridge_r_30_o_-30.stl
+Compliance: 299459.673229
+Total mass: 12480.000000
+
+bridge_r_30_o_-29.stl
+Compliance: 304855.548081
+Total mass: 12240.000000
+
+bridge_r_30_o_-28.stl
+Compliance: 307930.597136
+Total mass: 12040.000000
+
+bridge_r_30_o_-27.stl
+Compliance: 315694.589789
+Total mass: 11800.000000
+
+bridge_r_30_o_-26.stl
+Compliance: 318032.453097
+Total mass: 11640.000000
+
+bridge_r_30_o_-25.stl
+Compliance: 320808.974340
+Total mass: 11520.000000
+
+bridge_r_30_o_-24.stl
+Compliance: 330697.719469
+Total mass: 11280.000000
+
+bridge_r_30_o_-23.stl
+Compliance: 336079.139744
+Total mass: 11080.000000
+
+bridge_r_30_o_-22.stl
+Compliance: 349953.925837
+Total mass: 10840.000000
+
+bridge_r_30_o_-21.stl
+Compliance: 353692.395230
+Total mass: 10680.000000
+
+bridge_r_30_o_-20.stl
+Compliance: 359116.095704
+Total mass: 10560.000000
+
+bridge_r_31_o_-30.stl
+Compliance: 306988.224829
+Total mass: 12120.000000
+
+bridge_r_31_o_-29.stl
+Compliance: 308734.264177
+Total mass: 11960.000000
+
+bridge_r_31_o_-28.stl
+Compliance: 315694.589789
+Total mass: 11800.000000
+
+bridge_r_31_o_-27.stl
+Compliance: 320276.872940
+Total mass: 11560.000000
+
+bridge_r_31_o_-26.stl
+Compliance: 328472.367333
+Total mass: 11400.000000
+
+bridge_r_31_o_-25.stl
+Compliance: 335418.338682
+Total mass: 11160.000000
+
+bridge_r_31_o_-24.stl
+Compliance: 337937.713500
+Total mass: 11000.000000
+
+bridge_r_31_o_-23.stl
+Compliance: 349953.925837
+Total mass: 10840.000000
+
+bridge_r_31_o_-22.stl
+Compliance: 358597.206329
+Total mass: 10600.000000
+
+bridge_r_31_o_-21.stl
+Compliance: 372793.957333
+Total mass: 10440.000000
+
+bridge_r_31_o_-20.stl
+Compliance: 386237.005300
+Total mass: 10200.000000
+
+bridge_r_32_o_-30.stl
+Compliance: 314907.516467
+Total mass: 11800.000000
+
+bridge_r_32_o_-29.stl
+Compliance: 317999.608808
+Total mass: 11680.000000
+
+bridge_r_32_o_-28.stl
+Compliance: 320408.360185
+Total mass: 11480.000000
+
+bridge_r_32_o_-27.stl
+Compliance: 333914.687082
+Total mass: 11160.000000
+
+bridge_r_32_o_-26.stl
+Compliance: 335523.001995
+Total mass: 11080.000000
+
+bridge_r_32_o_-25.stl
+Compliance: 349478.516129
+Total mass: 10760.000000
+
+bridge_r_32_o_-24.stl
+Compliance: 355076.895164
+Total mass: 10640.000000
+
+bridge_r_32_o_-23.stl
+Compliance: 359194.743653
+Total mass: 10440.000000
+
+bridge_r_32_o_-22.stl
+Compliance: 383446.451015
+Total mass: 10120.000000
+
+bridge_r_32_o_-21.stl
+Compliance: 386633.715295
+Total mass: 10040.000000
+
+bridge_r_32_o_-20.stl
+Compliance: 411937.696105
+Total mass: 9720.000000
+
+bridge_r_33_o_-30.stl
+Compliance: 318081.024871
+Total mass: 11640.000000
+
+bridge_r_33_o_-29.stl
+Compliance: 326953.019058
+Total mass: 11360.000000
+
+bridge_r_33_o_-28.stl
+Compliance: 334099.222349
+Total mass: 11120.000000
+
+bridge_r_33_o_-27.stl
+Compliance: 337916.120128
+Total mass: 11000.000000
+
+bridge_r_33_o_-26.stl
+Compliance: 353059.264155
+Total mass: 10680.000000
+
+bridge_r_33_o_-25.stl
+Compliance: 355470.707511
+Total mass: 10600.000000
+
+bridge_r_33_o_-24.stl
+Compliance: 371479.644677
+Total mass: 10320.000000
+
+bridge_r_33_o_-23.stl
+Compliance: 384165.147068
+Total mass: 10080.000000
+
+bridge_r_33_o_-22.stl
+Compliance: 391682.353999
+Total mass: 9960.000000
+
+bridge_r_33_o_-21.stl
+Compliance: 418768.955907
+Total mass: 9640.000000
+
+bridge_r_33_o_-20.stl
+Compliance: 423457.002384
+Total mass: 9560.000000
+
+bridge_r_34_o_-30.stl
+Compliance: 331536.459358
+Total mass: 11280.000000
+
+bridge_r_34_o_-29.stl
+Compliance: 336822.529345
+Total mass: 11040.000000
+
+bridge_r_34_o_-28.stl
+Compliance: 344548.792802
+Total mass: 10920.000000
+
+bridge_r_34_o_-27.stl
+Compliance: 356705.632191
+Total mass: 10560.000000
+
+bridge_r_34_o_-26.stl
+Compliance: 361466.249460
+Total mass: 10440.000000
+
+bridge_r_34_o_-25.stl
+Compliance: 379628.222570
+Total mass: 10160.000000
+
+bridge_r_34_o_-24.stl
+Compliance: 390002.880316
+Total mass: 9920.000000
+
+bridge_r_34_o_-23.stl
+Compliance: 403721.298208
+Total mass: 9800.000000
+
+bridge_r_34_o_-22.stl
+Compliance: 426350.527355
+Total mass: 9440.000000
+
+bridge_r_34_o_-21.stl
+Compliance: 435705.935978
+Total mass: 9320.000000
+
+bridge_r_34_o_-20.stl
+Compliance: 468988.621087
+Total mass: 9040.000000
+
+bridge_r_35_o_-30.stl
+Compliance: 336963.238614
+Total mass: 10960.000000
+
+bridge_r_35_o_-29.stl
+Compliance: 351868.895546
+Total mass: 10720.000000
+
+bridge_r_35_o_-28.stl
+Compliance: 359488.226497
+Total mass: 10480.000000
+
+bridge_r_35_o_-27.stl
+Compliance: 361744.810587
+Total mass: 10360.000000
+
+bridge_r_35_o_-26.stl
+Compliance: 385571.096414
+Total mass: 10040.000000
+
+bridge_r_35_o_-25.stl
+Compliance: 390589.652301
+Total mass: 9840.000000
+
+bridge_r_35_o_-24.stl
+Compliance: 417573.883367
+Total mass: 9600.000000
+
+bridge_r_35_o_-23.stl
+Compliance: 431561.191074
+Total mass: 9360.000000
+
+bridge_r_35_o_-22.stl
+Compliance: 436789.764689
+Total mass: 9240.000000
+
+bridge_r_35_o_-21.stl
+Compliance: 480394.362983
+Total mass: 8920.000000
+
+bridge_r_35_o_-20.stl
+Compliance: 492308.431373
+Total mass: 8720.000000
+
+bridge_r_36_o_-30.stl
+Compliance: 354812.448606
+Total mass: 10640.000000
+
+bridge_r_36_o_-29.stl
+Compliance: 362299.519044
+Total mass: 10400.000000
+
+bridge_r_36_o_-28.stl
+Compliance: 376643.349600
+Total mass: 10200.000000
+
+bridge_r_36_o_-27.stl
+Compliance: 387121.066046
+Total mass: 9960.000000
+
+bridge_r_36_o_-26.stl
+Compliance: 395202.736381
+Total mass: 9760.000000
+
+bridge_r_36_o_-25.stl
+Compliance: 423301.301386
+Total mass: 9520.000000
+
+bridge_r_36_o_-24.stl
+Compliance: 437304.663862
+Total mass: 9280.000000
+
+bridge_r_36_o_-23.stl
+Compliance: 464212.312244
+Total mass: 9080.000000
+
+bridge_r_36_o_-22.stl
+Compliance: 484776.545802
+Total mass: 8840.000000
+
+bridge_r_36_o_-21.stl
+Compliance: 501134.102330
+Total mass: 8640.000000
+
+bridge_r_36_o_-20.stl
+Compliance: 557967.184950
+Total mass: 8400.000000
+
+bridge_r_37_o_-30.stl
+Compliance: 362917.161278
+Total mass: 10320.000000
+
+bridge_r_37_o_-29.stl
+Compliance: 383751.879757
+Total mass: 10080.000000
+
+bridge_r_37_o_-28.stl
+Compliance: 394817.753400
+Total mass: 9760.000000
+
+bridge_r_37_o_-27.stl
+Compliance: 416371.860472
+Total mass: 9560.000000
+
+bridge_r_37_o_-26.stl
+Compliance: 429973.525833
+Total mass: 9320.000000
+
+bridge_r_37_o_-25.stl
+Compliance: 439043.329159
+Total mass: 9120.000000
+
+bridge_r_37_o_-24.stl
+Compliance: 477698.274318
+Total mass: 8880.000000
+
+bridge_r_37_o_-23.stl
+Compliance: 500657.401872
+Total mass: 8560.000000
+
+bridge_r_37_o_-22.stl
+Compliance: 541046.741054
+Total mass: 8360.000000
+
+bridge_r_37_o_-21.stl
+Compliance: 570969.751339
+Total mass: 8120.000000
+
+bridge_r_37_o_-20.stl
+Compliance: 593959.940947
+Total mass: 7920.000000
+
+bridge_r_38_o_-30.stl
+Compliance: 388895.696302
+Total mass: 9880.000000
+
+bridge_r_38_o_-29.stl
+Compliance: 395075.516790
+Total mass: 9720.000000
+
+bridge_r_38_o_-28.stl
+Compliance: 420913.274508
+Total mass: 9440.000000
+
+bridge_r_38_o_-27.stl
+Compliance: 430506.160027
+Total mass: 9280.000000
+
+bridge_r_38_o_-26.stl
+Compliance: 463911.283279
+Total mass: 8960.000000
+
+bridge_r_38_o_-25.stl
+Compliance: 488291.671491
+Total mass: 8680.000000
+
+bridge_r_38_o_-24.stl
+Compliance: 501554.733836
+Total mass: 8520.000000
+
+bridge_r_38_o_-23.stl
+Compliance: 551921.501022
+Total mass: 8240.000000
+
+bridge_r_38_o_-22.stl
+Compliance: 572313.477172
+Total mass: 8080.000000
+
+bridge_r_38_o_-21.stl
+Compliance: 642072.643892
+Total mass: 7760.000000
+
+bridge_r_38_o_-20.stl
+Compliance: 704306.589318
+Total mass: 7480.000000
+
+bridge_r_39_o_-30.stl
+Compliance: 413743.351508
+Total mass: 9560.000000
+
+bridge_r_39_o_-29.stl
+Compliance: 425656.521361
+Total mass: 9360.000000
+
+bridge_r_39_o_-28.stl
+Compliance: 435567.019678
+Total mass: 9160.000000
+
+bridge_r_39_o_-27.stl
+Compliance: 477595.043302
+Total mass: 8800.000000
+
+bridge_r_39_o_-26.stl
+Compliance: 488314.469097
+Total mass: 8640.000000
+
+bridge_r_39_o_-25.stl
+Compliance: 536288.001227
+Total mass: 8280.000000
+
+bridge_r_39_o_-24.stl
+Compliance: 560937.888283
+Total mass: 8080.000000
+
+bridge_r_39_o_-23.stl
+Compliance: 581856.997744
+Total mass: 7880.000000
+
+bridge_r_39_o_-22.stl
+Compliance: 670763.615390
+Total mass: 7520.000000
+
+bridge_r_39_o_-21.stl
+Compliance: 704487.901062
+Total mass: 7360.000000
+
+bridge_r_39_o_-20.stl
+Compliance: 820406.591940
+Total mass: 7000.000000
+
+bridge_r_40_o_-30.stl
+Compliance: 435314.556554
+Total mass: 9160.000000
+
+bridge_r_40_o_-29.stl
+Compliance: 452896.880599
+Total mass: 9040.000000
+
+bridge_r_40_o_-28.stl
+Compliance: 480281.616097
+Total mass: 8680.000000
+
+bridge_r_40_o_-27.stl
+Compliance: 495454.504629
+Total mass: 8480.000000
+
+bridge_r_40_o_-26.stl
+Compliance: 544741.671192
+Total mass: 8160.000000
+
+bridge_r_40_o_-25.stl
+Compliance: 580995.146052
+Total mass: 7880.000000
+
+bridge_r_40_o_-24.stl
+Compliance: 618170.028304
+Total mass: 7760.000000
+
+bridge_r_40_o_-23.stl
+Compliance: 676274.903200
+Total mass: 7400.000000
+
+bridge_r_40_o_-22.stl
+Compliance: 718134.177295
+Total mass: 7200.000000
+
+bridge_r_40_o_-21.stl
+Compliance: 837306.319769
+Total mass: 6880.000000
+
+bridge_r_40_o_-20.stl
+Compliance: 948621.969353
+Total mass: 6600.000000
+

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGeometryd_.a  
+/usr/bin/ranlib libGeometryd_.a

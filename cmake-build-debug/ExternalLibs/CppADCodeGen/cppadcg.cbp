@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cppadcg"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Actuation\;CMake Files\AutodiffEngine\;CMake Files\cmake_utils\;CMake Files\Control\;CMake Files\DataStructure\;CMake Files\Deformable\;CMake Files\DesignOptimization\;CMake Files\FabTranslation\;CMake Files\ExternalLibs\;CMake Files\ExternalLibs\libigl\;CMake Files\ExternalLibs\libigl\external\;CMake Files\ExternalLibs\libigl\external\glfw\;CMake Files\ExternalLibs\libigl\external\glfw\CMake\;CMake Files\ExternalLibs\libigl\external\glfw\CMake\modules\;CMake Files\ExternalLibs\libigl\external\glfw\src\;CMake Files\ExternalLibs\libigl\external\glfw\examples\;CMake Files\ExternalLibs\libigl\external\glfw\tests\;CMake Files\ExternalLibs\libigl\external\glad\;CMake Files\ExternalLibs\CppADCodeGen\;CMake Files\ExternalLibs\CppADCodeGen\cmake\;CMake Files\ExternalLibs\CppADCodeGen\include\;CMake Files\ExternalLibs\CppADCodeGen\include\cppad\;CMake Files\ExternalLibs\CppADCodeGen\include\cppad\cg\;CMake Files\ExternalLibs\CppADCodeGen\include\cppad\cg\model\;CMake Files\ExternalLibs\CppADCodeGen\include\cppad\cg\model\threadpool\;CMake Files\ExternalLibs\CppADCodeGen\example\;CMake Files\ExternalLibs\CppADCodeGen\speed\;CMake Files\ExternalLibs\CppADCodeGen\speed\cppad\;CMake Files\ExternalLibs\CppADCodeGen\speed\cppad\cg\;CMake Files\ExternalLibs\CppADCodeGen\speed\cppad\cg\patterns\;CMake Files\ExternalLibs\CppADCodeGen\python\;CMake Files\ExternalLibs\CppADCodeGen\pkgconfig\;CMake Files\ExternalLibs\CppADCodeGen\doc\;CMake Files\ExternalLibs\googletest\;CMake Files\ExternalLibs\googletest\googlemock\;CMake Files\ExternalLibs\googletest\googlemock\cmake\;CMake Files\ExternalLibs\googletest\googletest\;CMake Files\ExternalLibs\googletest\googletest\cmake\;CMake Files\Geometry\;CMake Files\HardwareInterface\;CMake Files\Kinematics\;CMake Files\MachineLearning\;CMake Files\Materials\;CMake Files\Mesh\;CMake Files\MotionPlanning\;CMake Files\MotionPrimitives\;CMake Files\MultiphysicsCoupling\;CMake Files\NetworkCommunication\;CMake Files\OpenFab\;CMake Files\Optimization\;CMake Files\RigidBodyMechanics\;CMake Files\Sampling\;CMake Files\Simulation\;CMake Files\Test\;CMake Files\Visualization\;CMake Files\Visualization\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_patterns">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 example_patterns"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lagrangian">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/lagrangian" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 lagrangian"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lagrangian/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/lagrangian" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 lagrangian/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_dynamic_linux">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 example_dynamic_linux"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_source_generation_mathml">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 example_source_generation_mathml"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_source_generation_c">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 example_source_generation_c"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_lagrangian">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 example_lagrangian"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_dot">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_dot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_dot"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_dot/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_dot" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_dot/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="patterns">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/patterns" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 patterns"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="patterns/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/patterns" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 patterns/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_source_generation_latex">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 example_source_generation_latex"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_mathml">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_mathml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_mathml"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_mathml/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_mathml" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_mathml/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="examples">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 examples"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dynamic_linux">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/dynamic_linux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 dynamic_linux"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dynamic_linux/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/dynamic_linux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 dynamic_linux/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_c">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_c" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_c"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_c/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_c" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_c/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_latex">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_latex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_latex"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source_generation_latex/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/source_generation_latex" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 source_generation_latex/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="link_or_copy_latex_template">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 link_or_copy_latex_template"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_source_generation_dot">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 example_source_generation_dot"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="speed_plugflow">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/speed_plugflow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add option="-DLLVM_WITH_NDEBUG=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+					<Add directory="/usr/lib/llvm-6.0/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/test"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 speed_plugflow"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="speed_plugflow/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/speed_plugflow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add option="-DLLVM_WITH_NDEBUG=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+					<Add directory="/usr/lib/llvm-6.0/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/test"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 speed_plugflow/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_plugflow">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 benchmark_plugflow"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="benchmark_collocation">
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 benchmark_collocation"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="speed_collocation">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/speed_collocation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add option="-DLLVM_WITH_NDEBUG=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+					<Add directory="/usr/lib/llvm-6.0/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/test"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 speed_collocation"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="speed_collocation/fast">
+				<Option output="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/speed_collocation" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPROJECT_SOURCE_DIR=&quot;/home/aespielberg/ResearchCode/OpenFab&quot;"/>
+					<Add option="-DLLVM_VERSION_MAJOR=6"/>
+					<Add option="-DLLVM_VERSION_MINOR=0"/>
+					<Add option="-DLLVM_WITH_NDEBUG=0"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/ExternalLibs/CppAD"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns"/>
+					<Add directory="/usr/lib/llvm-6.0/include"/>
+					<Add directory="/home/aespielberg/ResearchCode/OpenFab/test"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 speed_collocation/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/aespielberg/ResearchCode/OpenFab/cmake-build-debug/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/dynamic_linux.cpp">
+			<Option target="dynamic_linux"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/lagrangian.cpp">
+			<Option target="lagrangian"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/patterns.cpp">
+			<Option target="patterns"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/source_generation_c.cpp">
+			<Option target="source_generation_c"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/source_generation_dot.cpp">
+			<Option target="source_generation_dot"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/source_generation_latex.cpp">
+			<Option target="source_generation_latex"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/source_generation_mathml.cpp">
+			<Option target="source_generation_mathml"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/job_speed_listener.cpp">
+			<Option target="speed_plugflow"/>
+			<Option target="speed_collocation"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/job_speed_listener.hpp">
+			<Option target="speed_plugflow"/>
+			<Option target="speed_collocation"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/speed_collocation.cpp">
+			<Option target="speed_collocation"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/speed_plugflow.cpp">
+			<Option target="speed_plugflow"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Actuation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Actuation\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/AutodiffEngine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AutodiffEngine\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/cmake_utils/cmake_utils.txt">
+			<Option virtualFolder="CMake Files\cmake_utils\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Control/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Control\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/DataStructure/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DataStructure\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Deformable/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Deformable\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/DesignOptimization/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DesignOptimization\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/FabTranslation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\FabTranslation\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\CMake\modules\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\src\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\examples\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glfw/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glfw\tests\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/libigl/external/glad/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\libigl\external\glad\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/FindADOLC.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/FindClang.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/FindCppAD.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/FindDL.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/FindEigen3.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/FindLLVM.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/Findcppcheck.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/cppcheck.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/textfile2h.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/cmake/util.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\include\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/include/cppad/cg/model/threadpool/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\include\cppad\cg\model\threadpool\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\example\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\speed\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\speed\cppad\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\speed\cppad\cg\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/speed/cppad/cg/patterns/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\speed\cppad\cg\patterns\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/python/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\python\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/pkgconfig/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\pkgconfig\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/pkgconfig/cppadcg-uninstalled.pc.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\pkgconfig\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/pkgconfig/cppadcg.pc.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\pkgconfig\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/CppADCodeGen/doc/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\CppADCodeGen\doc\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\googlemock\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\googletest\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/ExternalLibs/googletest/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\ExternalLibs\googletest\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Geometry/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Geometry\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/HardwareInterface/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\HardwareInterface\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Kinematics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Kinematics\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/MachineLearning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MachineLearning\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Materials/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Materials\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Mesh/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Mesh\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/MotionPlanning/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MotionPlanning\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/MotionPrimitives/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MotionPrimitives\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/MultiphysicsCoupling/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MultiphysicsCoupling\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/NetworkCommunication/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\NetworkCommunication\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/OpenFab/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\OpenFab\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Optimization/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Optimization\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/RigidBodyMechanics/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\RigidBodyMechanics\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Sampling/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Sampling\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Simulation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Simulation\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Test\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Visualization/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Visualization\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Visualization/cmake/FindCSharp.cmake">
+			<Option virtualFolder="CMake Files\Visualization\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Visualization/cmake/FindMono.cmake">
+			<Option virtualFolder="CMake Files\Visualization\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Visualization/cmake/UseCSharp.cmake">
+			<Option virtualFolder="CMake Files\Visualization\cmake\"/>
+		</Unit>
+		<Unit filename="/home/aespielberg/ResearchCode/OpenFab/Visualization/cmake/UseMono.cmake">
+			<Option virtualFolder="CMake Files\Visualization\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

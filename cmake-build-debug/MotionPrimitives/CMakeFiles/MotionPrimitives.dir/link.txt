@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMotionPrimitivesd_.a  
+/usr/bin/ranlib libMotionPrimitivesd_.a

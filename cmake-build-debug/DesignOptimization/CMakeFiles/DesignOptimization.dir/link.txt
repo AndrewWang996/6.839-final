@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDesignOptimizationd_.a  
+/usr/bin/ranlib libDesignOptimizationd_.a

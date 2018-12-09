@@ -1,0 +1,2 @@
+/usr/bin/ar qc libActuationd_.a  
+/usr/bin/ranlib libActuationd_.a

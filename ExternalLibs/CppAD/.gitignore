@@ -1,0 +1,27 @@
+# specific files
+/aclocal.m4
+/ar-lib
+/autom4te.cache
+/bin/test_one.sh
+/doxyfile
+/git_commit.sh
+/test_one.exe
+# specific directories
+/bug/build/
+/build/
+/doc/
+/doxydoc/
+# specific extensions in all directories
+*.err
+*.log
+*.swp
+*.tmp
+# all new directories
+/new/
+/new.*/
+# all junk files and direcrories
+junk
+junk.*
+# all temp files and directories
+temp
+temp.*

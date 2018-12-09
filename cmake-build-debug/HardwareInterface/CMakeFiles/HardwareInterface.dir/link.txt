@@ -1,0 +1,2 @@
+/usr/bin/ar qc libHardwareInterfaced_.a  
+/usr/bin/ranlib libHardwareInterfaced_.a

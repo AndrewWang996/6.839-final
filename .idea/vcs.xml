@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/CppAD" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/CppADCodeGen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/cinolib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/cinolib/external/eigen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/eigen-git-mirror" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/googletest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/CoMISo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/cork" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/eigen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/embree" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/glfw" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/imgui/imgui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/pybind11" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/pybind11/tools/clang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/tetgen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/tinyxml2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ExternalLibs/libigl/external/triangle" vcs="Git" />
+  </component>
+</project>

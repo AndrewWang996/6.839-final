@@ -1,0 +1,2 @@
+/usr/bin/ar qc libKinematicsd_.a  
+/usr/bin/ranlib libKinematicsd_.a

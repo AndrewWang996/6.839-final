@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wno-system-headers -g -O0 -g -ggdb -D_FORTIFY_SOURCE=2  -rdynamic CMakeFiles/dynamic_linux.dir/dynamic_linux.cpp.o  -o dynamic_linux -ldl -ldl 

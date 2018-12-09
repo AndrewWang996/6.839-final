@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/OpenFab.dir/src/main.cpp.o  -o OpenFabd_ ../ExternalLibs/libigl/external/glfw/src/libglfw3.a ../ExternalLibs/libigl/external/glad/libglad.a ../NetworkCommunication/libNetworkCommunicationd_.a /usr/lib/x86_64-linux-gnu/libprotobuf.so /usr/lib/x86_64-linux-gnu/librt.so -lm /usr/lib/x86_64-linux-gnu/libX11.so -pthread -ldl -ldl 

@@ -1,0 +1,25 @@
+Here is what belongs in each module:
+
+Actuation: Utilities for buliding up different actuation matrices B for various different actuation models.
+AutodiffEngine: General math library used for autodifferentiation.
+Control: Control algorithms, like LQR and MPC.  NOT motion planning
+Deformable: FEM model calculations, like generation of K matrices (no sim).  Also kinematic utilities for these domains.
+DesignOptimization: Optimization wrappers for design problems.
+ExternalLibs: Duh
+FabTranslation: Tools for turning designs into various fabricable objects, with different fabrication processes.
+Geometry: A geometry processing toolbox.  May piggyback on CGAL or something better.
+HardwareInterface: Tools for directly interfacing with hardware, like 3D printers, if realtime control is needed.  NOT for generating output files, that goes in FabTranslation.
+Kinematics: Models for articulated rigid bodies, and kinematic algorithms.
+MachineLearning: Machine Learning toolbox that can be used to generate models for control, modeling, and design.
+Materials: Material library.  Only codes up the energy functions and such from parameters, shouldn't assemble any systems, that should go in Deformable.
+Mesh: Build up the 2D and 3D geomery for Geometric tools.
+MotionPlanning: Motion planning algorithms, such as trajectory optimization and RRT.  NOT control.
+MotionPrimitives: Splines and other representations that may be useful in motion planning and control.
+MultiphysicsCoupling: Coupling of different models, and getting them to interact.
+NetworkCommunication: Utility class that might be useful for communicating with a visualizer or other processes.
+OpenFab: Driver programs.
+Optimization: Optimization wrapper toolbox.
+RigidBodyMechanics: Tools for building and interacting with H and C matrices in rigid mechanics.
+Sampling: Sampling toolbox (for design exploration and motion planning).
+Simulation: Domain-agnostic simulation methods, including euler-type methods and MPM.
+Visualization: Visualization toolbox.

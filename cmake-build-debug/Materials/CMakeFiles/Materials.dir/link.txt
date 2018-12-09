@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMaterialsd_.a  
+/usr/bin/ranlib libMaterialsd_.a

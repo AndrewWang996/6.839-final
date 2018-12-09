@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDataStructured_.a  
+/usr/bin/ranlib libDataStructured_.a

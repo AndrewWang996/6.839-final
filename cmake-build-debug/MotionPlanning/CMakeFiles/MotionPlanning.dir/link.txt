@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMotionPlanningd_.a  
+/usr/bin/ranlib libMotionPlanningd_.a

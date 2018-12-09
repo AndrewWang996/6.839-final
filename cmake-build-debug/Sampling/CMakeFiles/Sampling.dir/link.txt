@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSamplingd_.a  
+/usr/bin/ranlib libSamplingd_.a

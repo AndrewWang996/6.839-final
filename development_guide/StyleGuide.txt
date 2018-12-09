@@ -1,0 +1,10 @@
+Rules:
+-Make as many methods const.  If a method needs things that aren't const, see if you can modularize out all the things that are const.
+-Make as many variables const.
+-Use uints where appropriate (counters)
+-Write tests for every method to make sure the method itself is going to be fast!!!  Simple, short functions that have a little latency and then get called a lot = bad!  Let's try to keep this blazingly fast.
+-Try to optimize all your code as you go (controversial statement, I know).  In other words, as soon as you get something new going, try to make it as fast as possible.
+-Pass everything you can by reference, for memory allocation reasons.
+-Use fixed-size vectors whenever possible.
+-Pre-allocate memory whenever possible.  Memory allocation is the root of all slowdowns.
+-Avoid raw pointers whenever possible.  In fact, avoid pointers altogether except when needed.

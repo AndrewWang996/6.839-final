@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMeshd_.a  
+/usr/bin/ranlib libMeshd_.a

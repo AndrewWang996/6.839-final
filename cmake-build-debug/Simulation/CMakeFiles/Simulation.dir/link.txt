@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSimulationd_.a  
+/usr/bin/ranlib libSimulationd_.a

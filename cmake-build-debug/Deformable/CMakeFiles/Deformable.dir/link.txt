@@ -1,0 +1,2 @@
+/usr/bin/ar qc libDeformabled_.a  
+/usr/bin/ranlib libDeformabled_.a

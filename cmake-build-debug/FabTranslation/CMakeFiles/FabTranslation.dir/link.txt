@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFabTranslationd_.a  
+/usr/bin/ranlib libFabTranslationd_.a

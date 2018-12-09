@@ -1,0 +1,15 @@
+function(add_includes ProjectName)
+target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/eigen-git-mirror)
+#target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/eigen-git-mirror/Eigen/src)
+#target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/eigen-git-mirror/unsupported)
+target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/CppAD)
+target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/CppADCodeGen/include)
+target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/libigl/include)
+target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/cinolib/include)
+
+
+target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/libigl/external/glad/include)
+target_include_directories(${ProjectName} PRIVATE ${PROJECT_SOURCE_DIR}/../ExternalLibs/libigl/external/glfw/include)
+
+
+endfunction(add_includes)

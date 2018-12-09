@@ -1,0 +1,2 @@
+/usr/bin/ar qc libNetworkCommunicationd_.a  CMakeFiles/NetworkCommunication.dir/src/fossfab.pb.cc.o
+/usr/bin/ranlib libNetworkCommunicationd_.a

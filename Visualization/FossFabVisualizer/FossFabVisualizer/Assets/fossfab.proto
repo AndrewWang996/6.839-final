@@ -1,0 +1,47 @@
+// [START declaration]
+syntax = "proto3";
+package FossFab;
+
+
+message Command {
+	enum CommandCode {
+    	MOVE = 0;
+	RENDER_MESH = 1;
+	RENDER_PATH = 2;
+	RENDER_SLICES = 3;
+	RESET = 4;
+  }
+  
+
+
+	CommandCode command_code = 1; 
+	repeated HeadPosition positions = 2;	
+	Mesh mesh = 3;
+	bool extrude = 4;
+	repeated Slice slices = 5; //similar to headpositions but let's keep them separate for now
+	
+}
+
+message Slice{
+	repeated Vector3 positions = 1;
+}
+
+message Triangle{
+	Vector3 vertex1 = 1;
+	Vector3 vertex2 = 2;
+	Vector3 vertex3 = 3;
+}
+
+message Mesh {
+	repeated Triangle triangles = 1;
+}
+
+message Vector3 {
+ float x = 1;
+ float y = 2;
+ float z = 3;
+}
+
+message HeadPosition {
+  Vector3 pos = 1;
+}

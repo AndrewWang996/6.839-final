@@ -1,0 +1,2 @@
+/usr/bin/ar qc libOptimizationd_.a  
+/usr/bin/ranlib libOptimizationd_.a

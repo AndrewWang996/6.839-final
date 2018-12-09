@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMultiphysicsCouplingd_.a  
+/usr/bin/ranlib libMultiphysicsCouplingd_.a
