@@ -124,6 +124,7 @@ int main(int argc, char* argv[]) {
     args::ValueFlag<double> thickness(parser, "thickness", "Thickness of the wood (mm)", {'t', "thickness"}, 3.17, args::Options::Single);
     args::ValueFlag<double> scale(parser, "scale", "Scale (mm per unit)", {'s', "scale"}, 0.01, args::Options::Single);
     args::ValueFlag<std::string> contour_file(parser, "contour_file", "File to output slicer contours to", {'c', "contour_file"}, args::Options::Single);
+    args::ValueFlag<std::string> output_file(parser, "output_file", "File to output laser cutting paths to", {'o', "output_file"}, args::Options::Single);
     args::Positional<std::string> mesh_file(parser, "mesh_file", "Mesh in STL format", args::Options::Required);
 
     // Don't show the (overly verbose) message about the '--' flag
@@ -275,6 +276,17 @@ int main(int argc, char* argv[]) {
     // visualize your results with ply format
     if (!args::get(contour_file).empty()) {
         fab_translation::FabSlicer<double>::VisualizeContour(args::get(contour_file), 0.1, best_contours);
+    }
+
+    if (!args::get(output_file).empty()) {
+        std::vector<std::vector<Vector3<double>>> packing;
+        std::cout << "Begin PackSVG" << std::endl;
+        spine_fab.PackSVG(best_contours, packing);
+        std::cout << "End PackSVG" << std::endl;
+        std::vector<std::vector<std::vector<Vector3<double>>>> fakeContours;
+        fakeContours.reserve(1);
+        fakeContours.push_back(packing);
+        fab_translation::FabSlicer<double>::VisualizeContour(args::get(output_file), 0.1, fakeContours);
     }
 
     return 0;
