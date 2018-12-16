@@ -89,6 +89,12 @@ namespace mesh {
                 fprintf(fp, "f %d %d %d\n", _elements[i][0] + 1, _elements[i][1] + 1, _elements[i][2] + 1);
             fclose(fp);
         }
+        
+        std::vector<Vector3<T>> _vertices;                      // list of vertices
+        std::vector<Eigen::Vector3i>   _elements;               // list of elements (triangles)
+        std::vector<Eigen::Vector3i> _edges;                    // list of triangle edges
+        std::vector<Vector3<T>> _normals;                       // list of normal for each triangle
+        int _num_edges;                                         // number of different edges
 
         std::vector<Vector3<T>>& vertices() { return _vertices; }
         Vector3<T>& vertices(int idx) { return _vertices[idx]; }
@@ -135,11 +141,5 @@ namespace mesh {
             }
             return l;
         }
-
-        std::vector<Vector3<T>> _vertices;                      // list of vertices
-        std::vector<Eigen::Vector3i>   _elements;               // list of elements (triangles)
-        std::vector<Eigen::Vector3i> _edges;                    // list of triangle edges
-        std::vector<Vector3<T>> _normals;                       // list of normal for each triangle
-        int _num_edges;                                         // number of different edges
     };
 }
