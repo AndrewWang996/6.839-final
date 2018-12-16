@@ -37,6 +37,7 @@ target_include_directories(Assignment1 PRIVATE ../AutodiffEngine/include)
 target_include_directories(Assignment1 PRIVATE ../Mesh/include)
 target_include_directories(Assignment1 PRIVATE ../NetworkCommunication/include)
 target_include_directories(Assignment1 PRIVATE ../FabTranslation/include)
+target_include_directories(Assignment1 PRIVATE ../OpenFab/include)
 
 target_include_directories(Assignment2 PRIVATE ../DataStructure/include)
 target_include_directories(Assignment2 PRIVATE ../Geometry/include)

@@ -47,6 +47,11 @@ namespace fab_translation {
                 upper_bound = std::max(upper_bound, tri_mesh.vertices(i)[2]);
             }
 
+            if (_bottom > _top) {
+                _bottom = lower_bound;
+                _top = upper_bound;
+            }
+
             _interval_tree = data_structure::IntervalTree<T>(lower_bound - 0.1, upper_bound + 0.1);
 
             std::vector<data_structure::IntervalEntry<T>> triangle_intervals;
@@ -90,17 +95,17 @@ namespace fab_translation {
             Slicing_accelerated(_tri_mesh, intersection_edges);
 
             int t2 = std::clock();
-            printf("slicing mesh success... %.6lf seconds\n", (double)(t2 - t1) / 1000000.0);
+            // printf("slicing mesh success... %.6lf seconds\n", (double)(t2 - t1) / 1000000.0);
 
             CreateContour(_tri_mesh, intersection_edges, contour);
 
             int t3 = std::clock();
-            printf("creating contour success... %.6lf seconds\n", (double)(t3 - t2) / 1000000.0);
+            // printf("creating contour success... %.6lf seconds\n", (double)(t3 - t2) / 1000000.0);
 
-            Infill(contour, infill_edges);
+            //Infill(contour, infill_edges);
 
-            int t4 = std::clock();
-            printf("infill success... %.6lf seconds", (double)(t4 - t3) / 1000000.0);
+            //int t4 = std::clock();
+            //printf("infill success... %.6lf seconds", (double)(t4 - t3) / 1000000.0);
         }
 
         void Slicing_bruteforce(mesh::TriMesh<T>& tri_mesh, 
@@ -352,7 +357,7 @@ namespace fab_translation {
             }
         }  
 
-        void VisualizeSlicing(std::string file_name, 
+        static void VisualizeSlicing(std::string file_name, 
             T point_density,
             std::vector<std::vector<IntersectionEdge<T>>> intersection_edges) {
             
@@ -568,7 +573,7 @@ namespace fab_translation {
         }
 
 
-        void VisualizeContour(std::string file_name,
+        static void VisualizeContour(std::string file_name,
             T point_density, 
             std::vector<std::vector<std::vector<Vector3<T>>>>& contour) {
             // generate point cloud for ply
