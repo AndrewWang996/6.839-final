@@ -391,7 +391,10 @@ namespace fab_translation {
 
 
         int GetPlane(std::vector<Vector3<T>>& planarPoints) {
-
+            if (planarPoints.size() < 3) {
+                printf("FabSlicer.hpp:GetPlane():: Need > 2 points...\n");
+                return -1; 
+            }
             // Find bounding coordinates
             Vector3<T> pmin = planarPoints[0];
             Vector3<T> pmax = planarPoints[0];
@@ -412,10 +415,9 @@ namespace fab_translation {
                 } 
             }
             if (plane < 0) { 
-                printf("FabSlicer.hpp::BoundingRect():: Points not planar. Defaulting to axis 0.");
+                printf("FabSlicer.hpp::GetPlane():: Points not planar. Defaulting to axis 0.i\n");
             }
             return plane;
-
         }
 
         void SqueezePoints(std::vector<Vector3<T>>& points,
@@ -435,8 +437,13 @@ namespace fab_translation {
             Vector2<T>& cornerMin,
             Vector2<T>& cornerMax) {
 
-            cornerMin = points[0];
-            cornerMax = points[1];
+            // check if initialized
+            Vector2<T> d = (cornerMax - cornerMin);
+            if (d.maxCoeff() < 1e-4) {
+                // initialize to bounds
+                cornerMax = Vector2<T>(-1e30, -1e30);
+                cornerMin = Vector2<T>(1e30, 1e30);
+            }
             for (Vector2<T> p : points) {
                 cornerMin = cornerMin.cwiseMin(p);
                 cornerMax = cornerMax.cwiseMax(p);
@@ -501,74 +508,81 @@ namespace fab_translation {
                 - each point lies on the plane z=0
                 - no two slices' contours intersect on the plane
         */
-        void PackSVG(std::vector<std::vector<std::vector<Vector3<T>>>>& contour,
+        void PackSVG(std::vector<std::vector<std::vector<Vector3<T>>>>& slices,
             std::vector<std::vector<Vector3<T>>>& packing) {
         
             packing.clear();
 
-            // axis that each slice shares
-            int planeAxis = GetPlane(contour[0][1]); 
-
             // determine size of minimum bounding box before packing them
             Vector2<T> rectDim(0,0);
-            for (auto slice : contour) {
-                std::vector<Vector3<T>> inner = slice[0];
-                std::vector<Vector3<T>> outer = slice[1];
-                
-                // squeeze out the plane axis
-                std::vector<Vector2<T>> inner2D;
-                std::vector<Vector2<T>> outer2D;
-                SqueezePoints(outer, planeAxis, outer2D);
-                SqueezePoints(inner, planeAxis, inner2D);
+            for (auto& slice : slices) {
+                Vector2<T> cornerMin(1e30, 1e30);
+                Vector2<T> cornerMax(-1e30, -1e30);
+                for (std::vector<Vector3<T>> contour : slice) {
+                    if (contour.size() < 3) continue;
+                    // axis that contour shares
+                    int planeAxis = GetPlane(contour);
 
-                // get bounding rectangle
-                // recall our assumption that inner is contained in outer
-                Vector2<T> cornerMin, cornerMax;
-                BoundingRect(outer2D, cornerMin, cornerMax); 
-                
+                    // squeeze out the plane axis
+                    std::vector<Vector2<T>> contour2D;
+                    SqueezePoints(contour, planeAxis, contour2D);
+
+                    // get bounding rectangle
+                    // recall our assumption that inner is contained in outer
+                    BoundingRect(contour2D, cornerMin, cornerMax); 
+                }
                 // adjust size of (global) min bounding rect 
                 rectDim = rectDim.cwiseMax(cornerMax - cornerMin);
             }
 
             // get number of slices per row
-            int n = SlicesPerRow(rectDim, contour.size());
+            int n = SlicesPerRow(rectDim, slices.size());
 
             // pack them onto z=0 plane
-            for (int i=0; i<contour.size(); i++) {
-                std::vector<std::vector<Vector3<T>>> slice = contour[i];
-                std::vector<Vector3<T>> inner = slice[0];
-                std::vector<Vector3<T>> outer = slice[1];
-                
-                // [copy] squeeze out the plane axis
-                std::vector<Vector2<T>> inner2D;
-                std::vector<Vector2<T>> outer2D;
-                SqueezePoints(outer, planeAxis, outer2D);
-                SqueezePoints(inner, planeAxis, inner2D);
+            for (int i=0; i<slices.size(); i++) {
+                std::vector<std::vector<Vector3<T>>> slice = slices[i];
+                Vector2<T> cornerMin(1e30, 1e30);
+                Vector2<T> cornerMax(-1e30, -1e30);
+                for (std::vector<Vector3<T>>& contour : slice) {
+                    if (contour.size() < 3) continue;
+                    // [copy] axis that contour shares
+                    int planeAxis = GetPlane(contour);
 
-                // [copy] get bounding rectangle
-                Vector2<T> cornerMin, cornerMax;
-                BoundingRect(outer2D, cornerMin, cornerMax);
+                    // [copy] squeeze out the plane axis
+                    std::vector<Vector2<T>> contour2D;
+                    SqueezePoints(contour, planeAxis, contour2D);
 
-                // get transformation 
+                    // [copy] get bounding rectangle
+                    BoundingRect(contour2D, cornerMin, cornerMax);
+                }
+
+                // get center of bounding rect of current slice
                 Vector2<T> center = (cornerMin + cornerMax) / 2.0;
-                T ncx = rectDim[0] * (0.5 + (i % n));
-                T ncy = rectDim[1] * (0.5 + (i / n));
-                Vector2<T> newCenter(ncx, ncy);
-                Vector2<T> transform = (newCenter - center);
 
-                // move both inner and outer contours
-                std::vector<Vector2<T>> newInner2D;
-                std::vector<Vector2<T>> newOuter2D;
-                MovePoints(inner2D, transform, newInner2D);
-                MovePoints(outer2D, transform, newOuter2D);
+                for (std::vector<Vector3<T>>& contour : slice) {
+                    if (contour.size() < 3) continue;
+                    // [copy] axis that contour shares
+                    int planeAxis = GetPlane(contour);
 
-                // add to z=0 plane
-                std::vector<Vector3<T>> flatInner;
-                std::vector<Vector3<T>> flatOuter;
-                ExpandDim(newInner2D, 2, flatInner);
-                ExpandDim(newOuter2D, 2, flatOuter);
-                packing.push_back(flatInner);
-                packing.push_back(flatOuter);
+                    // [copy] squeeze out the plane axis
+                    std::vector<Vector2<T>> contour2D;
+                    SqueezePoints(contour, planeAxis, contour2D);
+
+                    // get transformation 
+                    T ncx = rectDim[0] * (0.5 + (i % n));
+                    T ncy = rectDim[1] * (0.5 + (i / n));
+                    Vector2<T> newCenter(ncx, ncy);
+                    Vector2<T> transform = (newCenter - center);
+
+                    // move both inner and outer contours
+                    std::vector<Vector2<T>> newContour2D;
+                    MovePoints(contour2D, transform, newContour2D);
+
+                    // add to z=0 plane
+                    std::vector<Vector3<T>> flatContour;
+                    ExpandDim(newContour2D, 2, flatContour);
+                    packing.push_back(flatContour);
+                }
             }
         }
 
